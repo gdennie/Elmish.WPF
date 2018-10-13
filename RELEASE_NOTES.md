@@ -1,3 +1,8 @@
+#### 2.0.0-beta-4
+
+* Breaking: Change order of `oneWayLazyWith` arguments to and rename it to `oneWayLazy`, removing the existing `oneWayLazy` function. The rationale is explained in [#60](https://github.com/elmish/Elmish.WPF/issues/60) . To migrate from 2.0.0-beta-3 to 2.0.0-beta-4: Add `(=)` as the `equals` parameter to `oneWayLazy` usages, and rename `oneWayLazyWith` usages to `oneWayLazy`.
+* Add `Binding.oneWaySeqLazy`
+
 #### 2.0.0-beta-3
 
 * Add convenience function to create design-time VMs
